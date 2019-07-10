@@ -1,0 +1,83 @@
+service:
+  group: SosPediatra
+  name: FCMPushService
+  version: 0.1.0
+
+api:
+  endpoint:
+    port: 7777
+    baseRoutingPath: /api/v1
+  security:
+    enabled: true
+    jwt:
+      secret: 7a2df5c9f02958d8fd164829bc295649bd71178f66e12ccb025df36bf02b9fc9
+      expiration:
+        enabled: true
+        minutes: 13149000
+
+db:
+  type: mysql
+  host: localhost
+  port: 3306
+  user: root
+  password: darkstar
+  database: sp_fcm
+  log: false
+
+management:
+  endpoint:
+    port: 7778
+    baseRoutingPath: /mgmt
+  health:
+    path: /health
+    full: true
+
+# logger configuration
+#     - maxSize:    the maximum size in megabytes of the log file before it gets rotated.
+#                   It defaults to 100 megabytes.
+#     - maxAge:     the maximum number of days to retain old log files based on the timestamp
+#                   encoded in their filename
+#     - maxBackups: the maximum number of old log files to retain.
+#                   The default  is to retain all old log files
+#     - localTime:  determines if the time used for formatting the timestamps in
+#                   backup files is the computer's local time.
+#                   The default is to use UTC time.
+#     - compress:   determines if the rotated log files should be compressed using gzip.
+#                   The default is not to perform compression.
+# log:
+#   path: logs
+#   filename: fcm-push-service.log
+#   console:
+#     enabled: true
+#     disableColors: false
+#     colors: true
+#   level: info
+#   json: false
+#   maxSize: 5
+#   maxAge: 60
+#   maxBackups: 90
+#   localTime: true
+#   compress: true
+#   timestampFormat: "02-01-2006 15:04:05"
+#   fullTimestamp: true
+#   forceFormatting: true
+  
+ldap:
+  base: dc=itresources,dc=it
+  host: www.itresources.it
+  port: 389
+  useSSL: false
+  bind:
+    dn: uid=zimbra,cn=admins,cn=zimbra
+    password: QdQHdvxKH
+  userFilter: (uid=%s)
+  groupFilter: (memberUid=%s)
+  attributes:
+    - givenName
+    - sn
+    - mail
+    - uid
+
+simple-gear:
+  name: SimpleGear
+  version: 0.1.0

@@ -1,0 +1,18 @@
+[10-07-2019 17:03:18]  INFO registering uuid-gear Gear
+[10-07-2019 17:03:18]  INFO registering simple-gear Gear
+[10-07-2019 17:03:18]  INFO registering HealthGear Gear
+[10-07-2019 17:03:18]  INFO configuring machinery gears
+[10-07-2019 17:03:18]  INFO the simple-gear gear is configurable
+[10-07-2019 17:03:18]  INFO starting machinery gears
+[10-07-2019 17:03:18]  INFO starting the uuid-gear gear
+[10-07-2019 17:03:18]  INFO starting the simple-gear gear
+[10-07-2019 17:03:18]  INFO starting the HealthGear gear
+[10-07-2019 17:03:18]  INFO app Machinery started
+[10-07-2019 17:03:20]  INFO caught sig: interrupt
+[10-07-2019 17:03:20]  INFO Wait for 2 second to finish processing
+[10-07-2019 17:03:22]  INFO Shutting down the Machinery
+[10-07-2019 17:03:22]  INFO shutting down the HealthGear gear
+[10-07-2019 17:03:22]  INFO shutting down the uuid-gear gear
+[10-07-2019 17:03:22]  INFO shutting down the simple-gear gear
+[10-07-2019 17:03:22]  INFO All gears went down. Shutting down the Machinery.
+[10-07-2019 17:03:22]  INFO Bye!
