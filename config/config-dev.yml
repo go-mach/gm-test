@@ -10,7 +10,7 @@ api:
   security:
     enabled: true
     jwt:
-      secret: dadasdadascadadadassdasdadafwefsgwggwb3bewbwebwbewrbewrbwrebwerbwrbewbefsfsf
+      secret: dadasdadascadadadassdasdadafwefsgwggwb3bewbwebwbewrbewrbwrebwerbwrbewbefsfsfs
       expiration:
         enabled: true
         minutes: 13149000
