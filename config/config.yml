@@ -4,6 +4,7 @@ service:
   version: 0.1.0
 
 api:
+  name: ApiGear
   endpoint:
     port: 7777
     baseRoutingPath: /api/v1
@@ -44,23 +45,23 @@ management:
 #                   The default is to use UTC time.
 #     - compress:   determines if the rotated log files should be compressed using gzip.
 #                   The default is not to perform compression.
-# log:
-#   path: logs
-#   filename: fcm-push-service.log
-#   console:
-#     enabled: true
-#     disableColors: false
-#     colors: true
-#   level: info
-#   json: false
-#   maxSize: 5
-#   maxAge: 60
-#   maxBackups: 90
-#   localTime: true
-#   compress: true
-#   timestampFormat: "02-01-2006 15:04:05"
-#   fullTimestamp: true
-#   forceFormatting: true
+log:
+  path: logs
+  filename: test-service.log
+  console:
+    enabled: true
+    disableColors: false
+    colors: true
+  level: info
+  json: false
+  maxSize: 5
+  maxAge: 60
+  maxBackups: 90
+  localTime: true
+  compress: true
+  timestampFormat: "02-01-2006 15:04:05"
+  fullTimestamp: true
+  forceFormatting: true
   
 ldap:
   base: dc=itresources,dc=it
@@ -81,3 +82,4 @@ ldap:
 simple-gear:
   name: SimpleGear
   version: 0.1.0
+  message: THE NEW MESSAGE PROVIDED

@@ -1,0 +1,42 @@
+package mediator
+
+// C is the mediator channel
+// var C chan int
+
+// func init() {
+// 	C = make(chan int)
+// 	log.Print("Mediator Initialized")
+// 	go waitMessages()
+// }
+
+// Mediator .
+// type Mediator struct {
+// 	C chan int
+// }
+
+// var mediator *Mediator
+
+// func init() {
+// 	log.Print("Initializing Mediator")
+// 	mediator := &Mediator{C: make(chan int)}
+
+// 	go waitMessages(mediator.C)
+
+// 	log.Print("Mediator Initialized")
+// 	return
+// }
+
+// func waitMessages() {
+// 	for {
+// 		select {
+// 		case msg := <-C:
+// 			log.Printf("Mediator received %d", msg)
+// 		}
+// 	}
+
+// }
+
+// // GetMediator .
+// func GetMediator() *Mediator {
+// 	return mediator
+// }

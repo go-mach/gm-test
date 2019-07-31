@@ -1,0 +1,12 @@
+.DS_Store
+.vendor/
+.idea/
+.vscode/
+*.iml
+*.exe
+*.exe~
+*.pem
+output*
+.idea/
+logs/
+
